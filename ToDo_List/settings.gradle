@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        google()           // Repository for Android plugins
+        mavenCentral()     // Repository for Maven artifacts
+        gradlePluginPortal() // Repository for Gradle plugins
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS) // Ensures no project-level repositories are used
+    repositories {
+        google()       // Repository for Android libraries
+        mavenCentral() // Repository for Maven artifacts
+    }
+}
+
+rootProject.name = "To-Do_List" // Ensure this matches your project name
+include ':app' // Includes the 'app' module

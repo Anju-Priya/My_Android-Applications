@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kitab"
+    tools:context=".SignUp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:gravity="center"
+            android:text="SIGNUP"
+            android:textColor="@color/Machenta"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="jelly_bean" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutfullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="FullName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/baseline_perm_contact_calendar_24"
+                android:drawableRight="@drawable/baseline_perm_contact_calendar_24"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/black"
+                tools:targetApi="jelly_bean" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutfullName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/baseline_usename"
+                android:drawableRight="@drawable/baseline_usename"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/black"
+                tools:targetApi="jelly_bean" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutusername">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:drawableEnd="@drawable/baseline_pass"
+                android:drawableRight="@drawable/baseline_pass"
+                android:fontFamily="@font/poppinsmedium"
+                tools:targetApi="jelly_bean" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Contact"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutpassword"
+            tools:layout_editor_absoluteX="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/baseline_local_phone_24"
+                android:drawableRight="@drawable/baseline_local_phone_24"
+                android:fontFamily="@font/poppinsmedium"
+                tools:targetApi="jelly_bean" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutcontact" />
+
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="105dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/Tan"
+            android:text="Register"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progress" />
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="@string/Loginhere"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSignUp"
+            tools:targetApi="jelly_bean" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

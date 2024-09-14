@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="hidden" />
+    <drawable name="sample_2" />
+    <drawable name="sample_0" />
+    <drawable name="sample_1" />
+    <drawable name="sample_3" />
+    <drawable name="sample_4" />
+    <drawable name="sample_5" />
+    <drawable name="sample_6" />
+    <drawable name="sample_7" />
+</resources>

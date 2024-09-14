@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Toolbar with Back Button -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CustomToolbarStyle"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Title Section -->
+    <TextView
+        android:id="@+id/title_services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Services"
+        android:textSize="24sp"
+        android:textColor="#002e63"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/roboto_bold" />
+
+    <!-- Scrollable Content Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Example Service Card 1 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Custom Software Development"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="We provide bespoke software solutions tailored to your business needs."
+                        android:textSize="16sp"
+                        android:textColor="@color/greyDark"
+                        android:layout_marginBottom="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Service Card 2 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Web Design and Development"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Creating visually appealing and user-friendly websites to enhance your online presence."
+                        android:textSize="16sp"
+                        android:textColor="@color/greyDark"
+                        android:layout_marginBottom="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Service Card 3 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile App Development"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Developing high-quality mobile applications for both Android and iOS platforms."
+                        android:textSize="16sp"
+                        android:textColor="@color/greyDark"
+                        android:layout_marginBottom="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Service Card 4 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SEO Optimization"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Improving your website's visibility on search engines through effective SEO strategies."
+                        android:textSize="16sp"
+                        android:textColor="@color/greyDark"
+                        android:layout_marginBottom="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Service Card 5 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Digital Marketing"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Boosting your brand's presence and engagement through strategic digital marketing campaigns."
+                        android:textSize="16sp"
+                        android:textColor="@color/greyDark"
+                        android:layout_marginBottom="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Service Card 6 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UI/UX Design"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Designing intuitive and aesthetically pleasing user interfaces to enhance user experience."
+                        android:textSize="16sp"
+                        android:textColor="@color/greyDark"
+                        android:layout_marginBottom="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Service Card 7 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cloud Services"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Offering scalable and secure cloud solutions to improve your business operations."
+                        android:textSize="16sp"
+                        android:textColor="@color/greyDark"
+                        android:layout_marginBottom="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Service Card 8 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                app:cardBackgroundColor="@color/cardBackground">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IT Consulting"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Providing expert advice to help you make informed IT decisions and improve your tech strategies."
+                        android:textSize="16sp"
+                        android:textColor="@color/greyDark"
+                        android:layout_marginBottom="8dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

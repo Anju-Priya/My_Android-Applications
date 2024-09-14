@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyDiary</string>
+    <string name="username">Username</string>
+    <string name="FullName" />
+    <string name="password" />
+    <string name="passw">Password</string>
+    <string name="Password" />
+    <string name="login" />
+    <string name="Loginhere">Already have an account? Login</string>
+    <string name="signuphere">Create a new account? SignUp</string>
+</resources>

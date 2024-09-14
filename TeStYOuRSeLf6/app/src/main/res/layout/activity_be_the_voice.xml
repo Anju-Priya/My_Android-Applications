@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeTheVoice"
+    android:background="#e3dac9 "
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="WelCoMe tO The ChaLLenGe"
+        android:textSize="30dp"
+        android:textColor="#665d1e"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="#faf0e6"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <TextView
+                    android:id="@+id/Type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|bottom"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:paddingLeft="1in"
+                    android:text="Type your speed"
+                    android:textColor="#836953"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/typing" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="1in"
+            android:layout_margin="5dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="#faf0e6">
+
+        <ImageView
+            android:layout_width="1in"
+            android:layout_height="1in"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:elevation="3dp"
+            android:src="@drawable/quizz"/>
+
+                <TextView
+                    android:id="@+id/QuIz"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="1in"
+                    android:text="Mend your mind"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="#b8860b"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="1in"
+                android:layout_margin="5dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="5dp"
+                app:cardBackgroundColor="#faf0e6">
+
+                <ImageView
+                    android:layout_width="1in"
+                    android:layout_height="1in"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:elevation="3dp"
+                    android:src="@drawable/img"/>
+
+                <TextView
+                    android:id="@+id/brainriddle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:paddingLeft="1in"
+                    android:text="Hide And Seek"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="#808000 "
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

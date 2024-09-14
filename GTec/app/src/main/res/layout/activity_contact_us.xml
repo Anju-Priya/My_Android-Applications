@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CustomToolbarStyle1"
+            android:layout_marginTop="3dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <!-- Custom Back Button Style -->
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    <!-- Spacing between Toolbar and content -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Hero Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@drawable/john"
+        android:padding="20dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/text_contact_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Our Contact Page!"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We are here to assist you with any inquiries or support you may need. Please reach out to us through the methods provided below."
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/text_contact_us"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_regular" />
+    </RelativeLayout>
+
+    <!-- Description Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📧 Email Us:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For all general inquiries, please reach out to us at our email address. Whether you have questions about our services or need further assistance, we’re here to help!"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📞 Call Us:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you prefer to speak to us directly, you can call our customer support hotline. We’re available to take your call and provide support during our office hours."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💬 Live Chat:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For real-time assistance, you can use our live chat feature. Our support team is available during specified hours to help you with any issues or questions you may have."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📍 Visit Us:"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feel free to visit us at our office for a face-to-face consultation. We’d be happy to assist you in person and answer any questions you might have."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+
+    <!-- Footer Section with Social Media Links -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/white"
+        android:layout_marginTop="24dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_facebook"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/facebook" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_twitter"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="@string/twitter" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_instagram"
+            android:contentDescription="@string/instagram" />
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>

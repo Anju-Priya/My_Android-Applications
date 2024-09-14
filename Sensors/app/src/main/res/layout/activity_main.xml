@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/plain">
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="@color/teal_200"
+        android:text="Right"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="100dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/teal_200"
+        android:text="Wrong"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/buttonco_ordinates_tracker"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="202dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/purple_200"
+        android:text="@string/co_ordinates_tracker"
+        android:textColor="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textLatLong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:id="@+id/sg1"
+        android:layout_width="153dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_200"
+        android:text="Show_Gyroscope"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textY1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textZ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/in_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="#80daeb"
+        android:text="Display"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/in_time"
+        android:layout_width="250dip"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="number"
+        android:textColor="@color/black"
+        />
+
+</LinearLayout>

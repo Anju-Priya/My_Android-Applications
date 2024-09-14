@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GTec</string>
+    <string name="intro_text">intro_text</string>
+    <string name="client_name">Client Name</string>
+    <string name="client_quote_goes_here">Client quote goes here</string>
+    <string name="contact">contact\n</string>
+    <string name="clients">clients\n</string>
+    <string name="services">services\n</string>
+    <string name="home">home\n</string>
+    <string name="twitter">twitter\n</string>
+    <string name="facebook">facebook</string>
+    <string name="instagram">instagram\n</string>
+    <string name="back">back\n</string>
+    <string name="back_arrow">back_arrow</string>
+</resources>
